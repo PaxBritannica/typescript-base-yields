@@ -4,9 +4,15 @@
   background-color: grey;
 }
 
+#rC,
+#rD,
+#rM {
+  cursor: pointer;
+}
+
 .pic-mine {
-  width: 250px;
-  height: 200px;
+  width: 200px;
+  height: 130px;
   cursor: pointer;
   position: center;
 }
