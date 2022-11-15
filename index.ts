@@ -137,19 +137,19 @@ function myFunction(mine, bank) {
   //...
 
   if (haveEnoughMetal) {
-    console.log((mine.level += 1));
-    miniera = ` Estrattori Metalli Pesanti: ${metalMine.level}`;
-    document.getElementById('miniera').innerHTML = miniera;
-
     //chiamata per patchare il bank... Con la nuova quantity
     metalInBank.quantity -= mine.cost.baseMetal;
     //.. Return di bank direttamente?
-
-    return (mine.level += 1);
+    setTimeout(sayHi, 1000, mine);
   } else {
     console.log('Not Possible');
-    return 0;
   }
+}
+
+function sayHi(mine) {
+  console.log(mine.level);
+  miniera = ` Estrattori Metalli Pesanti: ${metalMine.level}`;
+  document.getElementById('miniera').innerHTML = miniera;
 }
 
 // try to add a button function that increases both the level of the farm and the base yields
