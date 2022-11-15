@@ -147,7 +147,8 @@ function myFunction(mine, bank) {
 }
 
 function sayHi(mine) {
-  console.log(mine.level);
+  console.log((mine.level += 1));
+  mine.level += 1;
   miniera = ` Estrattori Metalli Pesanti: ${metalMine.level}`;
   document.getElementById('miniera').innerHTML = miniera;
 }
