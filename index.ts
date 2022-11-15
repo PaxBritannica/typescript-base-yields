@@ -73,8 +73,12 @@ const m3 = `${Math.round(0.3 * 3 * 1.1 ** 3 * 60 * 60)}`;
 const m5 = `${Math.round(0.2 * 5 * 1.1 ** 5 * 60 * 60)}`;
 const m10 = `${Math.round(0.1 * 10 * 1.1 ** 10 * 60 * 60)}`;
 
-const miniera = ` Industrie Metalli Pesanti: ${metalMine.level}`;
+const miniera = ` Estrattori Metalli Pesanti: ${metalMine.level}`;
+const fibra = ` Filiera della fibra: ${metalMine.level}`;
+const oliera = ` Estrazione Idrocarburi: ${metalMine.level}`;
 document.getElementById('miniera').innerHTML = miniera;
+document.getElementById('oliera').innerHTML = oliera;
+document.getElementById('fibra').innerHTML = fibra;
 
 document.getElementById('m3').innerHTML = m3;
 document.getElementById('m5').innerHTML = m5;
