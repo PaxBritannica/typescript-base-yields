@@ -147,10 +147,12 @@ function myFunction(mine, bank) {
 }
 
 function sayHi(mine) {
-  console.log((mine.level += 1));
-  mine.level += 1;
+  mine.level++;
   miniera = ` Estrattori Metalli Pesanti: ${metalMine.level}`;
   document.getElementById('miniera').innerHTML = miniera;
 }
 
 // try to add a button function that increases both the level of the farm and the base yields
+
+// Decidi il costo che è ancora fisso prova ad aumentarlo dinamicamente.
+// Prova a disabilitare la miniera mentre è in costruzione e a fare in modo che parta un timer.
