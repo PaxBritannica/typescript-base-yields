@@ -1,9 +1,17 @@
-h1,
-h2 {
-  font-family: Lato;
+* {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: grey;
 }
 
 .pic-mine {
   width: 250px;
   height: 200px;
+  cursor: pointer;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
 }
